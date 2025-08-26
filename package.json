@@ -1,0 +1,21 @@
+{
+  "name": "vscode-quick-notes",
+  "displayName": "Quick Notes",
+  "version": "0.0.1",
+  "publisher": "neerajnagar",
+  "engines": { "vscode": "^1.90.0" },
+  "activationEvents": ["onCommand:quicknotes.addNote"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [{ "command": "quicknotes.addNote", "title": "Quick Notes: Add Note" }]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.0"
+  }
+}
